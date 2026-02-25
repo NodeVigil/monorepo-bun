@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-bun",
+  "author": "Gouranga Das Samrat",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/client",	
+    "apps/server"
+  ],
+  "scripts": {
+    "dev": "bun run dev:client & bun run dev:server",
+    "dev:client": "bun run dev --filter apps/client",
+    "dev:server": "bun run dev --filter apps/server",
+    "start:server": "bun run start --filter apps/server",
+    "build": "bun run build --filter client"
+  }
+}
