@@ -39,7 +39,7 @@ const swaggerOptions = {
 
 const uiOptions = {
   customSiteTitle: "Video Share API | Docs",
-  customfavIcon: "/favicon.svg",
+  customfavIcon: "/public/favicon.svg",
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
